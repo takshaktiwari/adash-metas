@@ -30,7 +30,8 @@ class Metatags extends Component
             $pageTags = $metatags->filter(fn ($item) => $item->url == url('/'))->first();
         }
 
-        $globalTags = $metatags->filter(fn ($item) => $item->url == null)->first()?->tags?->toArray();
+        $globalTags = $metatags->filter(fn ($item) => $item->url == null)->first();
+        $globalTags = $globalTags ? $globalTags->tags?->toArray() : [];
         $this->metatag = $pageTags ? $pageTags?->tags?->toArray() : [];
 
         foreach ($globalTags as $gTag) {
