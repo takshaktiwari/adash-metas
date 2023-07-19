@@ -1,0 +1,29 @@
+{
+    "name": "takshak/adash-metas",
+    "keywords": ["laravel", "adash", "admin", "blog"],
+    "description": "meta tags extension for adash admin panel",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Takshak Tiwari",
+            "email": "takshaktiwari@gmail.com"
+        }
+    ],
+    "require": {
+        "takshak/adash": "*"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Takshak\\Ametas\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Takshak\\Ametas\\AmetasServiceProvider"
+            ]
+        }
+    }
+}
