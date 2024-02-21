@@ -12,6 +12,10 @@ Add component to admin sidebar, inside ul element for getting the links in admin
 
     <x-ametas-ametas:admin-sidebar-links />
 
+Run the migrations
+
+    php artisan migrate
+
 # Components
 
 ## Admin sidebar menu
