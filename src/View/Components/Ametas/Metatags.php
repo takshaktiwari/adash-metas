@@ -50,7 +50,7 @@ class Metatags extends Component
 
         foreach ($tags as $name => $content) {
             foreach ($this->metatag as $key => $metatag) {
-                if($metatag['name'] == $name){
+                if($metatag['name'] == $name && !empty($content)){
                     unset($this->metatag[$key]);
                 }
             }
