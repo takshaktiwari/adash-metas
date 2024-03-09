@@ -49,6 +49,12 @@ class Metatags extends Component
         }
 
         foreach ($tags as $name => $content) {
+            foreach ($this->metatag as $key => $metatag) {
+                if($metatag['name'] == $name){
+                    unset($this->metatag[$key]);
+                }
+            }
+
             $this->metatag[] = [
                 'name' => $name,
                 'content' => $content
