@@ -24,4 +24,4 @@ Run the migrations
 
 ## Displaying meta tags on website
 
-**<x-ametas-ametas:metatags />**: Add this component in the head tag of your website to display meta tags there
+**<x-ametas-ametas:metatags />**: Add this component in the head tag of your website to display meta tags there. You can pass `url` argument to tell the component about some specific url otherwise it will capture the current url. You can also pass array to tags in `tags` argument to tell the component some custom meta tags, like: __:tags="['title' => 'Some page title', 'keywords' => 'and so on']"__
