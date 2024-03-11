@@ -35,7 +35,7 @@
             </div>
         @endif
 
-        <div class="row">
+        <div class="row" id="tags_row">
             @foreach ($metatag->tags as $tag)
             <div class="col-lg-4 col-md-6">
                 <div class="card shadow-sm mb-2" id="{{ $loop->iteration == 1 ? 'first_tag' : '' }}">
